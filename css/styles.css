@@ -17,7 +17,7 @@ body {
     background-color: darkblue;
 }
 
-main {
+#main-page {
     display: flex;
     background-color: white;
     margin-left: 50px;
@@ -45,7 +45,7 @@ h1, h3 {
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
-    display: grid;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     grid-template-columns: 50% 50%;
@@ -57,12 +57,19 @@ h1, h3 {
     /* align-items: center; */
     /* justify-content: center; */
     display: grid;
-    grid-template-columns: 150px calc(100% - 150px);
-    margin: 20px;
+    /* grid-template-columns: 150px calc(100% - 150px); */
+    grid-template-columns: 1fr 2fr;
+    margin: 10px;
     padding: 10px;
     align-items: center;
     background-color: tan;
     height: 200px;
+    max-width: 350px;
+    /* max-width: 400px; */
+    /* min-width: 350px; */
+    flex-shrink: 1;
+    flex-grow: 1;
+    /* flex-basis: 1; */
 
 }
 
@@ -73,7 +80,7 @@ h1, h3 {
     /* padding: 20px; */
 }
 .event-img {
-    width: 150px;
+    width: 100%;
     max-height: 400;
 }
 
@@ -90,6 +97,22 @@ h1, h3 {
     height:20px
 }
 
+#article-box {
+    display: grid;
+    width:auto;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    column-gap: 50px;
+    background-color: lightgray;
+}
+
+#column2 {
+    border: 1px solid gray;
+    /* margin-right: 20px; */
+}
+
 .footer-button {
     width: fit-content;
     background-color: gold;
@@ -98,33 +121,46 @@ h1, h3 {
     border: none;
     padding: 10px;
     font-weight: bold;
+    justify-self: center;
     height:20px;
 }
 
-@media (max-width: 900px) {
-    #event-container {
-        grid-template-columns: 100%;
-    }
-}
-
-@media (min-width: 1300px) {
-    #event-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-.about-paragraph {
+#about-paragraph {
     margin-left: 100px;
     margin-right: 100px;
 }
+@media (max-width: 700px) {
+    #main-page {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #about-paragraph {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /* #event-container {
+        grid-template-columns: 100%;
+    } */
+}
+
+@media (max-width: 550px) {
+    #article-box {
+        grid-template-columns: 1fr;
+    }
+    /* #event-container {
+        grid-template-columns: repeat(3, 1fr);
+    } */
+}
+
 
 
 footer {
     color: white;
-    display: flex;
+    display: grid;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    grid-template-columns: repeat(3,1fr);
     
 }
 
