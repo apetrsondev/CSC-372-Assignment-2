@@ -111,6 +111,24 @@ h1, h3 {
 #column2 {
     border: 1px solid gray;
     /* margin-right: 20px; */
+    padding: 10px;
+}
+
+#column1 {
+    display:block;
+    flex-direction: column;
+}
+
+#signup {
+    background-color: gold;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+#main-img {
+    max-width: 100%;
 }
 
 .footer-button {
