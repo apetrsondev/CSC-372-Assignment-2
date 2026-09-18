@@ -129,11 +129,13 @@ h1, h3 {
     margin-left: 100px;
     margin-right: 100px;
 }
-@media (max-width: 700px) {
+@media (max-width: 950px) {
     #main-page {
         margin-left: 0px;
         margin-right: 0px;
     }
+}
+@media (max-width: 600px) {
     #about-paragraph {
         margin-left: 20px;
         margin-right: 20px;
