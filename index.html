@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html>
+<!--
+  Name: Andrew Peterson
+  Date: 09.18.2026
+  CSC 372-01
+
+  This is the index.html page for the assignment it displays upcoming events and a short paragraph about the event team.
+-->
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,26 +20,31 @@
             </a>
         </header>
         <main id="main-page">
-            <h1>
+            <h2>
                 Welcome To UNCG Event Page
-            </h1>
-            <h3>
+            </h2>
+            <p>
                 Where you can find all the events coming up on campus
-            </h3>
-            <img src="images/logo.svg" alt="Homepage logo image">
-            <a href="#event-container">
-                <button id="up-events">
+            </p>
+            <img src="images/logo.svg" alt="Homepage logo image" id="main-img">
+            <div>
+                <a href="#event-container" class="up-events">
                     View Upcoming Events
-                </button>
-            </a>
-            <h1>
+                </a>
+                <a href="#about" class="up-events">
+                    View About
+                </a>
+            </div>
+            <h3>
                 Events: 
-            </h1>
-            <section id="event-container">
+            </h3>
+            <div id="event-container">
                 <div class="event-box">
                     <img src="images/bowling.png" class="event-img" alt="event 1 image">
                     <article class="event-info">
-                        Bowling <br>
+                        <h4>
+                            Bowling
+                        </h4>
                         Location: Greensboro <br>
                         Date: 09/29/2026 <br>
                         Category: Entertainment <br>
@@ -41,9 +53,11 @@
                     <a href="event.html" class="details-button">View Details</a>
                 </div>
                 <div class="event-box">
-                    <img src="images/tutoring.png" class="event-img" alt="event 1 image">
+                    <img src="images/tutoring.png" class="event-img" alt="event 2 image">
                     <article class="event-info">
-                        Math Tutoring <br>
+                        <h4>
+                            Math Tutoring
+                        </h4>
                         Location: Petty 121 <br>
                         Date: 09/24/2026 <br>
                         Category: Tutoring <br>
@@ -52,9 +66,11 @@
                     <a href="event.html" class="details-button">View Details</a>
                 </div>
                 <div class="event-box">
-                    <img src="images/baseball.jpg" class="event-img" alt="event 1 image">
+                    <img src="images/baseball.jpg" class="event-img" alt="event 3 image">
                     <article class="event-info">
-                        Baseball Game <br>
+                        <h4>
+                            Baseball Game <br>
+                        </h4>
                         Location: Greensboro <br>
                         Date: 10/02/2026 <br>
                         Category: Sports <br>
@@ -63,9 +79,11 @@
                     <a href="event.html" class="details-button">View Details</a>
                 </div>
                 <div class="event-box">
-                    <img src="images/soccer.jpg" class="event-img" alt="event 1 image">
+                    <img src="images/soccer.jpg" class="event-img" alt="event 4 image">
                     <article class="event-info">
-                        Soccer Game <br>
+                        <h4>
+                            Soccer Game <br>
+                        </h4>
                         Location: Greensboro <br>
                         Date: 09/22/2026 <br>
                         Category: Sports <br>
@@ -74,9 +92,11 @@
                     <a href="event.html" class="details-button">View Details</a>
                 </div>
                 <div class="event-box">
-                    <img src="images/movie.jpg" class="event-img" alt="event 1 image">
+                    <img src="images/movie.jpg" class="event-img" alt="event 5 image">
                     <article class="event-info">
-                        Movie Night <br>
+                        <h4>
+                            Movie Night <br>
+                        </h4>
                         Location: AMC Theaters <br>
                         Date: 09/30/2026 <br>
                         Category: Entertainment <br>
@@ -84,8 +104,8 @@
                     </article>
                     <a href="event.html" class="details-button">View Details</a>
                 </div>
-            </section>
-            <h1>
+            </div>
+            <h1 id="about">
                 About
             </h1>
             <p id="about-paragraph">

@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html>
+<!--
+  Name: Andrew Peterson
+  Date: 09.18.2026
+  CSC 372-01
+
+  This is the event.html page for the assignment. It displays event details and a few related events.
+-->
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,81 +19,82 @@
                 <img src="images/logo.svg" alt="site logo" id="site-logo">
             </a>
         </header>
-    </body>
-    <main id="main-page">
-        <h1>Movie Night</h1>
-        <main id="article-box">
-            <div>
-                <img src="images/movie.jpg" id="main-img">
-                <p id="column1">
-                    Come watch Spider-Man Brand New Day at AMC Theaters with us! Tickets will be provided 
-                    and every student that signs up can get a plus one for $10 extra. Some concessions will be provided.
-                    There will be three showtimes available each with 100 students per showing.
-                </p>
-                <h3>
-                    Showings:
-                </h3>
-                <ul>
-                    <li>4:00 PM</li>
-                    <li>8:00 PM</li>
-                    <li>10:00 PM</li>
-                </ul>
-            </div>
-            <p id="column2">
-                Date: 09/30/2026 <br>
-                Location: AMC Theaters <br>
-                Organizer: UNCG Events <br>
-                Sign Up by Emailing UNCG Events at events@uncg.edu<br>
-                Or by clicking the link below: <br>
-                <button id="signup">
-                    Sign Up
-                </button>
+        <main id="main-page">
+            <h1>Event:</h1>
+            <h2>Movie Night</h2>
+            <div id="article-box">
+                <div>
+                    <img src="images/movie.jpg" alt="main image for movie" id="main-img">
+                    <p id="column1">
+                        Come watch Spider-Man Brand New Day at AMC Theaters with us! Tickets will be provided 
+                        and every student that signs up can get a plus one for $10 extra. Some concessions will be provided.
+                        There will be three showtimes available each with 100 students per showing.
+                    </p>
+                    <h3>
+                        Showings:
+                    </h3>
+                    <ul>
+                        <li>4:00 PM</li>
+                        <li>8:00 PM</li>
+                        <li>10:00 PM</li>
+                    </ul>
+                </div>
+                <p id="column2">
+                    Date: 09/30/2026 <br>
+                    Location: AMC Theaters <br>
+                    Organizer: UNCG Events <br>
+                    Sign Up by Emailing UNCG Events at events@uncg.edu<br>
+                    Or by clicking the link below: <br>
+                    <button id="signup">
+                        Sign Up
+                    </button>
 
-            </p>
-        </main>
-        <h1>related events</h1>
-        <section id="event-container">
-            <div class="event-box">
-                <img src="images/bowling.png" class="event-img" alt="event 1 image">
-                <article class="event-info">
-                    Bowling <br>
-                    Location: Greensboro <br>
-                    Date: 09/29/2026 <br>
-                    Category: Entertainment <br>
-                    Go Bowling with friends! Or by yourself if you want <br>
-                </article>
-                <a href="event.html" class="details-button">View Details</a>
+                </p>
             </div>
-            <div class="event-box">
-                    <img src="images/baseball.jpg" class="event-img" alt="event 1 image">
+            <h2>Related events</h2>
+            <div id="event-container">
+                <div class="event-box">
+                    <img src="images/bowling.png" class="event-img" alt="event 1 image">
                     <article class="event-info">
-                        Baseball Game <br>
+                        <h3>Bowling </h3>
                         Location: Greensboro <br>
-                        Date: 10/02/2026 <br>
-                        Category: Sports <br>
-                        Free admission for students!
+                        Date: 09/29/2026 <br>
+                        Category: Entertainment <br>
+                        Go Bowling with friends! Or by yourself if you want <br>
                     </article>
                     <a href="event.html" class="details-button">View Details</a>
                 </div>
                 <div class="event-box">
-                    <img src="images/soccer.jpg" class="event-img" alt="event 1 image">
-                    <article class="event-info">
-                        Soccer Game <br>
-                        Location: Greensboro <br>
-                        Date: 09/22/2026 <br>
-                        Category: Sports <br>
-                        Free admission for students! 
-                    </article>
-                    <a href="event.html" class="details-button">View Details</a>
+                        <img src="images/baseball.jpg" class="event-img" alt="event 1 image">
+                        <article class="event-info">
+                            <h3>Baseball Game</h3>
+                            Location: Greensboro <br>
+                            Date: 10/02/2026 <br>
+                            Category: Sports <br>
+                            Free admission for students!
+                        </article>
+                        <a href="event.html" class="details-button">View Details</a>
+                    </div>
+                    <div class="event-box">
+                        <img src="images/soccer.jpg" class="event-img" alt="event 1 image">
+                        <article class="event-info">
+                            <h3>Soccer Game </h3>
+                            Location: Greensboro <br>
+                            Date: 09/22/2026 <br>
+                            Category: Sports <br>
+                            Free admission for students! 
+                        </article>
+                        <a href="event.html" class="details-button">View Details</a>
+                    </div>
                 </div>
-        </section>
-    </main>
-    <footer>
-            <p id="footer-text">
-                Copyright ©2026<br>
-                azpeterson@uncg.edu
-            </p>
-            <a href="event.html" class="footer-button">Return to Top</a>
-            <a href="index.html" class="footer-button">Home Page</a>
+        </main>
+        <footer>
+                <p id="footer-text">
+                    Copyright ©2026<br>
+                    azpeterson@uncg.edu
+                </p>
+                <a href="event.html" class="footer-button">Return to Top</a>
+                <a href="index.html" class="footer-button">Home Page</a>
         </footer>
+    </body>
 </html>
